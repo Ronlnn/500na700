@@ -1,0 +1,50 @@
+@use '../../../scss/variables' as *;
+.button {
+  width: 181px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  border-radius: 40px;
+  border: 1px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 0.2rem;
+    background: $gradient;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
+    -webkit-mask-composite: xor;
+  }
+
+  &.light {
+    color: #ffffff;
+  }
+
+  &.dark {
+    color: #000000;
+  }
+
+  &:hover {
+    background: $gradient;
+    border-color: transparent;
+    color: #ffffff;
+    &.dark {
+      color: #000000;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}

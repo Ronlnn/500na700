@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+@mixin heading-base {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+  text-transform: $heading-text-transform;
+  margin-bottom: $heading-margin-bottom;
+}

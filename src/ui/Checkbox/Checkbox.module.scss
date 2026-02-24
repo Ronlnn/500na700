@@ -1,0 +1,32 @@
+@use '../../../scss/variables' as *;
+
+.checkboxContainer {
+  display: flex;
+  gap: 10px;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease;
+  background: transparent;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 0.1rem;
+    background: $gradient;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
+    -webkit-mask-composite: xor;
+  }
+}
+
+.checkboxContainer input:checked + .checkbox {
+  background: url('../../assets/Checkbox-active.svg');
+}

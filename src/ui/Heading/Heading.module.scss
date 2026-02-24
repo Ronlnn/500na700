@@ -1,0 +1,21 @@
+@use '../../../scss/mixins.scss' as *;
+
+.mainTitle {
+  @include heading-base;
+  font-size: 40px;
+}
+
+.title {
+  @include heading-base;
+  font-size: 24px;
+}
+
+.subtitle {
+  @include heading-base;
+  font-size: 20px;
+}
+
+.smallTitle {
+  @include heading-base;
+  font-size: 16px;
+}
