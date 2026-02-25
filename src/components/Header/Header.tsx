@@ -3,7 +3,6 @@ import styles from './Header.module.scss';
 import { Button, Logo } from '../../ui';
 import { Link } from 'react-router-dom';
 import ContactModal from '../ContactModal/ContactModal';
-import ContactForm from '../ContactForm/ContactForm';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
