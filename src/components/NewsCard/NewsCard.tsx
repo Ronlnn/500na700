@@ -2,7 +2,7 @@ import type React from 'react';
 import styles from './NewsCard.module.scss';
 import type { NewsCardProps } from './NewsSection.types';
 import { Heading, Text } from '../../ui';
-import { useMediaQuery } from '../../utils/useMediaQuery';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 import { Link } from 'react-router-dom';
 
 const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
