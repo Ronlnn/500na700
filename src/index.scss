@@ -1,3 +1,4 @@
+@use '../scss/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
@@ -13,6 +14,7 @@ html,
   height: 100%;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
+  background-color: $black;
 }
 
 input[type='checkbox'] {

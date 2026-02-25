@@ -1,0 +1,18 @@
+@use '../../../scss/variables' as *;
+.mainHeader {
+  max-height: 119px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0 40px;
+  border-bottom: 1px solid $header-border;
+}
+
+.headerLogo {
+  cursor: pointer;
+}
