@@ -1,5 +1,6 @@
 @use '../../../scss/variables' as *;
 .mainHeader {
+  max-width: 1440px;
   max-height: 119px;
   height: 100%;
   display: flex;
