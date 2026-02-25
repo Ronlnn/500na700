@@ -2,14 +2,13 @@ import type React from 'react';
 import styles from './NewsSection.module.scss';
 import { Heading } from '../../ui';
 import NewsCard from '../NewsCard/NewsCard';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
-import { useNews } from '../../hooks/useNews';
+import { useNews, useMediaQuery } from '../../hooks';
 
 const NewsSection: React.FC = () => {
   const { news, loading, error } = useNews();
   const isMobile = useMediaQuery('(max-width: 480px)');
 
-  if (loading) return <div className={styles.loading}>Загрузка</div>;
+  if (loading) return <div className={styles.loading}>Загрузка...</div>;
   if (error) return <div className={styles.error}>{error}</div>;
 
   return (

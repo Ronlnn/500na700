@@ -14,18 +14,16 @@
   border-bottom: 1px solid $header-border;
   overflow: hidden;
   background-color: $black;
+
+  @media (max-width: 480px) {
+    max-height: 83px;
+    padding: 0 10px;
+  }
 }
 
 .headerLogo {
   cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  .mainHeader {
-    max-height: 83px;
-    padding: 0 10px;
-  }
-  .headerLogo {
+  @media (max-width: 480px) {
     width: 44px;
     height: 53px;
   }

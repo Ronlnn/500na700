@@ -3,10 +3,13 @@
 .appContainer {
   background-color: $black;
   max-width: 1440px;
-  min-height: 100vh;
+  height: 100vh;
   margin: auto;
   position: relative;
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 @media (max-width: 480px) {

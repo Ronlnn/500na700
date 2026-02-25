@@ -1,0 +1,76 @@
+@use '../../../scss/variables' as *;
+
+.newsDetailedSection {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  padding-top: 78px;
+  padding-bottom: 150px;
+  //flex: 1;
+
+  @media (max-width: 480px) {
+    padding: 40px 0 80px 0;
+    flex-direction: column;
+  }
+}
+
+.newsImg {
+  width: 440px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
+  @media (max-width: 480px) {
+    width: 320px;
+    height: 232px;
+  }
+}
+.newsDetailedContainer {
+  max-width: 510px;
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+  }
+}
+
+.newsTitle {
+  margin-bottom: 20px;
+}
+.newsDate {
+  color: $white;
+  opacity: 50%;
+  margin-bottom: 40px;
+}
+.newsDetailedTitle {
+  margin-bottom: 20px;
+}
+.detailedDescription {
+  color: $white;
+}
+.paragraph {
+  color: $white;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: $white;
+  font-size: 30px;
+}
+.error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: $error-color;
+  font-size: 30px;
+}

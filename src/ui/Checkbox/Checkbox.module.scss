@@ -3,13 +3,17 @@
 .checkboxContainer {
   display: flex;
   gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+  cursor: pointer;
 }
 .checkbox {
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
   transition: all 0.3s ease;
   background: transparent;
   position: relative;
+
 
   &::before {
     content: '';

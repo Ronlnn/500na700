@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.scss';
-
 import { Button, Logo } from '../../ui';
 import { Link } from 'react-router-dom';
+import ContactModal from '../ContactModal/ContactModal';
+import ContactForm from '../ContactForm/ContactForm';
 
 const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className={styles.mainHeader}>
       <Link to={'/'}>
-        <Logo className={styles.headerLogo} />
+        <Logo variant="primary" className={styles.headerLogo} />
       </Link>
-      <Button variant="light">Связаться с нами</Button>
+      <Button variant="light" onClick={() => setIsOpen(true)}>
+        Связаться с нами
+      </Button>
+      {isOpen && <ContactModal onClose={() => setIsOpen(false)} />}
     </header>
   );
 };

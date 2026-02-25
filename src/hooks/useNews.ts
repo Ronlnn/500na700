@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import type { NewsItemData } from '../components/NewsSection/NewsSection.types';
+import type { NewsItemData } from "../types/newsData";
 
-export const useNews = () => {
+const useNews = () => {
   const [news, setNews] = useState<NewsItemData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -30,3 +30,4 @@ export const useNews = () => {
 
   return { news, loading, error };
 };
+export default useNews;

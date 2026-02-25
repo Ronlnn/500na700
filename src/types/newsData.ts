@@ -5,5 +5,5 @@ export interface NewsItemData {
   date: string;
   image: string;
   detailedTitle: string;
-  detailedDescription: string;
+  detailedDescription: string[];
 }

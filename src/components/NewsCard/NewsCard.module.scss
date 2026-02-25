@@ -19,7 +19,8 @@
 }
 
 .cardDescription {
-  color: gray;
+  opacity: $white;
+  opacity: 50%;
   margin-bottom: 20px;
 }
 .cardDate {
@@ -30,6 +31,7 @@
 }
 .cardLink {
   text-decoration: none;
+  color: $white;
 }
 
 @media (max-width: 1339px) {
