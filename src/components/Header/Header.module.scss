@@ -5,14 +5,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
   padding: 0 40px;
   border-bottom: 1px solid $header-border;
+  overflow: hidden;
+  background-color: $black;
 }
 
 .headerLogo {
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .mainHeader {
+    max-height: 83px;
+    padding: 0 10px;
+  }
+  .headerLogo {
+    width: 44px;
+    height: 53px;
+  }
 }

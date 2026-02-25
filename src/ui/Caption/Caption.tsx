@@ -18,6 +18,4 @@ const Caption = forwardRef<HTMLElement, CaptionProps>(
   },
 );
 
-Caption.displayName = 'Caption';
-
 export default Caption;

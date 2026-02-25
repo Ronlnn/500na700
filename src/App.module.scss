@@ -3,6 +3,14 @@
 .appContainer {
   background-color: $black;
   max-width: 1440px;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
+  position: relative;
+  padding-top: 120px;
+}
+
+@media (max-width: 480px) {
+  .appContainer {
+    padding-top: 83px;
+  }
 }
