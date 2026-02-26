@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { NewsItemData } from "../types/newsData";
+import type { NewsItemData } from '../types/newsData';
 
 const useNews = () => {
   const [news, setNews] = useState<NewsItemData[]>([]);
@@ -11,7 +11,9 @@ const useNews = () => {
       try {
         await new Promise(resolve => setTimeout(resolve, 1500));
 
-        const response = await fetch('/src/data/newsData.json');
+        const response = await fetch(
+          `${import.meta.env.BASE_URL}data/newsData.json`,
+        );
         if (!response.ok) {
           throw new Error('Ошибка загрузки');
         }
