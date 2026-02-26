@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
         onChange={v => handleChange('email', v)}
       />
       {errors.email && <span className={styles.error}>{errors.email}</span>}
-      <Checkbox >
+      <Checkbox>
         <Caption>Я согласен (-а) на обработку персональных данных</Caption>
       </Checkbox>
       <Button variant="dark" type="submit" className={styles.formButton}>
