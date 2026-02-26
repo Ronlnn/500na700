@@ -60,17 +60,23 @@
   }
 }
 
-.loading {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  color: $white;
-  font-size: 30px;
-}
+.loading,
 .error {
   position: fixed;
   top: 50%;
   left: 50%;
-  color: $error-color;
+  transform: translate(-50%, -50%);
   font-size: 30px;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.loading {
+  color: $white;
+}
+
+.error {
+  color: $error-color;
 }
