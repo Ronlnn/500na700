@@ -6,7 +6,7 @@ import NewsDetailedPage from './pages/NewsDetailedPage/NewsDetailedPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className={styles.appContainer}>
         <Header />
         <Routes>
