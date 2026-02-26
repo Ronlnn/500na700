@@ -16,16 +16,12 @@
 }
 
 .newsImg {
-  width: 440px;
-  height: 320px;
+  max-width: 440px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-
-  @media (max-width: 480px) {
-    width: 320px;
-    height: 232px;
-  }
 }
 .newsDetailedContainer {
   max-width: 510px;

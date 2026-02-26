@@ -5,14 +5,13 @@
   cursor: pointer;
   margin-bottom: 40px;
 }
+.imgContainer {
+  max-width: 440px;
+}
 
 .cardImage {
-  max-width: 440px;
-  min-width: 320px;
   width: 100%;
-  max-height: 300px;
-  min-height: 218px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
   margin-bottom: 20px;
@@ -27,7 +26,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 .cardDate {
   color: white;
